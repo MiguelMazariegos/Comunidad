@@ -10,7 +10,7 @@ namespace Comunidad
     {
         private string id_gasto;
         private string descripcion;
-        private int importe;
+        private decimal importe;
         private char tipo_gasto;
 
         public string Id_gasto
@@ -39,7 +39,7 @@ namespace Comunidad
             }
         }
 
-        public int Importe
+        public decimal Importe
         {
             get
             {
