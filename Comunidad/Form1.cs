@@ -198,5 +198,23 @@ namespace Comunidad
             }
             lectura5.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int temp=0;
+            decimal total = 0;
+            label6.Text = comunidades[0].Nombre;
+            label7.Text = "3";
+            for (int i = 0; i < (locales.Count()+garajes.Count()+pisos.Count()); i++)
+            {
+                temp = temp+1;
+            }
+            label8.Text = Convert.ToString(temp);
+            for (int i = 0; i < gastos_propietario.Count(); i++)
+            {
+                total = total+gastos_propietario[i].Importe;
+            }
+            label9.Text = Convert.ToString(total);
+        }
     }
 }
